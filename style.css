@@ -1,0 +1,142 @@
+
+/* Custom Properties */
+
+:root {
+    --clr-delft-blue: #273469;
+    --clr-gunmetal: #30343F;
+    --clr-ghost-white: #FAFAFF;
+    --clr-periwinkle: #E4D9FF;
+
+    --clr-1: #3F4B66;
+    --clr-2: #F5F9FF;
+    --clr-3: #D692B7;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: var(--clr-gunmetal);
+    color: var(--clr-2);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+main {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.intro {
+    background-color: var(--clr-1);
+    color: var(--clr-2);
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    margin-block-end: 1rem;
+}
+
+/* FORM */
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background-color: var(--clr-1);
+}
+
+
+.form-row {
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+}
+
+/* INPUT */
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: .25rem .5rem;
+}
+
+
+input[type="email"]:invalid {
+    border-color: red;
+}
+
+/* RADIO */
+
+.radio-buttons-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+select {
+    padding: .5rem;
+}
+
+/* TEXTAREA */
+
+.textarea {
+  border: none;
+  border-radius: 5px;
+}
+
+#description {
+    padding: .5rem;
+}
+
+/* CHECKBOX */
+
+.checkbox {
+    display: flex;
+    gap: 1rem;
+}
+
+/* SUBMIT */
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    cursor: pointer;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--clr-3);
+    font-weight: 700;
+    background-color: var(--clr-3);
+    color: var(--clr-2);
+}
+
+.btn:is(:hover, :focus) {
+    opacity: .8;
+    transition: 1s;
+}

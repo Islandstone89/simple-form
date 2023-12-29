@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Profile</title>
+</head>
+<body>
+    <main>
+        <div class="intro">
+            <h1>Personal Profile</h1>
+            <p>Update your profile so others can get to know you better</p>
+        </div><!-- end intro -->
+
+        <form class="profile-form">
+            
+            <div class="form-row input">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div><!-- end form-row -->
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div><!-- end form-row -->
+            </div><!-- end form-row input -->
+
+            <div class="form-row radio">
+                <legend class="radio-legend">Allow push notifications?</legend>
+                <div class="radio-buttons-wrapper">
+                    <div class="radio-buttons">
+                        <input type="radio" name="push-type" id="push-type-1" value="no">
+                        <label for="push-type-1">No</label>
+                    </div><!-- end radio-buttons -->
+                        
+                    <div class="radio-buttons">
+                        <input type="radio" name="push-type" id="push-type-2" value="yes">
+                        <label for="push-type-1">Yes</label>
+                    </div><!-- end radio-buttons -->
+                </div><!-- end radio-buttons-wrapper -->
+            </div><!-- end form-row radio -->
+
+            <div class="form-row dropdown">
+                <label for="color">Pick a profile color</label>
+                <select name="color" id="color">
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </div><!-- end form-row dropdown -->
+
+            <div class="form-row textarea">
+                <label for="description">Your profile description:</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div><!-- end form-row textarea -->
+
+            <div class="form-row checkbox">
+                <p>Are you happy?</p>
+                <label for="ishappy">
+                    <input type="checkbox" name="ishappy" id="ishappy" value="happy">
+                </label>
+            </div><!-- end form-row checkbox -->
+
+            <div class="submit">
+                <button type="button" class="btn">Submit</button>
+            </div><!-- end submit -->
+
+        </form><!-- end profile-form -->
+    </main>
+</body>
+</html>
